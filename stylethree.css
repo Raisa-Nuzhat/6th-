@@ -1,0 +1,128 @@
+/*.parent 
+{
+    width: 800px;
+    height: 600px;
+    background-color: aqua;
+    position: relative;
+    z-index: 1;
+    left: 200px;
+    right: 200px;
+}
+.parent .child1:hover
+{
+    background-color: lightsalmon;
+}
+.parent .child1
+{
+    z-index: 2;
+    position: absolute;
+    background-color: blueviolet;
+    width: 300px;
+    height: 200px;
+    top: 100px;
+    left: 100px;
+    transition: 500ms;
+}
+.parent .child2
+{
+    background-color: rgb(9, 66, 255);
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    z-index: 3;
+    left: 150px;
+    top:150px;
+    border: 3px solid red;
+    transition: 3s;
+
+
+}
+.parent .child2:hover{
+    z-index: 8;
+    top: 300px;
+    border-radius: 50%;
+
+}
+.parent .child3
+{
+    background-color: rgb(205, 146, 233);
+    position: absolute;
+    z-index: 4;
+    width: 300px;
+    height: 300px;
+    left: 180px;
+    top: 159px;
+    transition: 2s;
+}
+.parent .child3:hover{
+    background-color: rgb(187, 219, 41);
+    width: 150px;
+    border-radius: 200px;
+    z-index: 6;
+    top: 0px;
+    left: 0px;
+}*/
+.card
+{
+    width: 400px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    margin:20px auto;
+    transition: 300ms;
+}
+.card .card_text .price
+{
+    color: coral;
+    font-family: Cambria;
+    font-size: 25px;
+}
+.card img
+{
+    width: 100%;
+    align-items: center;
+
+}
+.card .card_text .discount span
+{
+    text-decoration: line-through;
+}
+.card .card_text h2
+{
+    font-size: 30px;
+    font-family: Times New Roman;
+    margin: 10px 0;
+}
+.card .card_text
+{
+    box-sizing: border-box;
+    padding: 0 20px;
+    margin: 10px 0;
+}
+.card:hover
+{
+    background-color: rgb(112, 80, 255);
+    color: white;
+    
+}
+.card:hover .price
+{
+    color: black;
+}
+.card .card_text a{
+    text-decoration: none;
+    width: 150px;
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+    border-radius: 5px;
+    color: #f85606;
+    border: 1px solid #f85606;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+.card .card_text a:hover{
+    color: rgb(12, 11, 11);
+    border-radius: 0 35px 0 35px;
+    background-color: #eaeef5;
+}
